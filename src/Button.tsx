@@ -1,6 +1,13 @@
-const Button = () => {
+import './Button.css'
+
+interface ButtonProps {
+    callApi: () => void;
+}
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     return(
-        <><h2>Button Component</h2></>
+        <button onClick={props.callApi}>
+            Click to generate a joke
+        </button>
     )
 }
 
