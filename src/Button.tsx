@@ -6,7 +6,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     return(
         <button onClick={props.callApi}>
-            Click to generate a joke
+            Want to laugh?
         </button>
     )
 }
